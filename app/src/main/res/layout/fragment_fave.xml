@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/favorites"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif-condensed"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_fave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_movie_fave"
+            >
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <include layout="@layout/view_loading" />
+
+</FrameLayout>

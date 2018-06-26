@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_poster_container"
+        android:background="@color/colorPrimaryLight"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:id="@+id/v_searching"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            >
+            <TextView
+                android:id="@+id/tv_loading_poster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/empty"
+                tools:text="@string/loading_poster"
+                />
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:indeterminate="true"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_poster_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_large_toggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="right"
+            android:text="Tap to view larger poster"
+            android:padding="8dp"
+            android:background="#ccffffff"
+            android:textColor="@color/colorSecondaryText"
+            />
+
+        <ImageView
+            android:id="@+id/bt_fav"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="right"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_baseline_star_border"
+            android:background="@drawable/bg_rounded"
+            android:tint="@color/colorPrimaryDark"
+            />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:layout_marginTop="8dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_title_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Avengers: Infinity War"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:fontFamily="sans-serif-condensed"
+            />
+
+        <TextView
+            android:id="@+id/tv_original_title_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Original Avengers: Infinity War"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-condensed"
+            />
+
+        <TextView
+            android:id="@+id/tv_overview_detail"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:text="Overview of Avengers: Infinity War. Overview of Avengers: Infinity War. Overview of Avengers: Infinity War. Overview of Avengers: Infinity War. Overview of Avengers: Infinity War. Overview of Avengers: Infinity War. Overview of Avengers: Infinity War. Overview of Avengers: Infinity War"
+            android:textSize="14sp"
+            android:ellipsize="end"
+            android:maxLines="9"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            >
+            <TextView
+                android:id="@+id/tv_release_date_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/released"
+                tools:text="Released: 2018-08-08"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

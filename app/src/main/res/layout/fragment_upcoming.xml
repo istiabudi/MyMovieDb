@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/upcoming_movie"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif-condensed"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_upcoming"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_movie_upcoming"
+            >
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <include layout="@layout/view_loading" />
+
+</FrameLayout>

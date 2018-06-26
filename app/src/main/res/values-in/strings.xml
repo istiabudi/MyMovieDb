@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Film DB</string>
+    <string name="loading_poster">Memuat poster film...</string>
+    <string name="searching">Mencari...</string>
+    <string name="empty"></string>
+    <string name="search">Cari</string>
+    <string name="language_settings">Pengaturan Bahasa</string>
+    <string name="upcoming">Akan Datang</string>
+    <string name="now_playing">Dimainkan</string>
+    <string name="movie_search">Pencarian</string>
+    <string name="movie_database">Database Film</string>
+    <string name="searching_for">Mencari: %1$s</string>
+    <string name="put_search_keyword_here">Masukkan kata kunci pencarian...</string>
+    <string name="upcoming_movie">Akan Datang</string>
+    <string name="share">Bagikan</string>
+    <string name="released"><b>Dirilis:</b> %1$s</string>
+    <string name="share_to">Bagikan ke...</string>
+    <string name="favorites">Favorit</string>
+    <string name="remove_from_fave">%1$s hapus dari daftar favorit</string>
+    <string name="added_to_fave">%1$s tambahkan ke daftar favorit</string>
+    <string name="loading">Loading...</string>
+</resources>
